@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aisha Aura Hanin | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#faf8f4;
+    color:#444;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+section{
+    padding:80px 0;
+}
+
+h2{
+    font-size:36px;
+    color:#5c4a3d;
+    margin-bottom:30px;
+}
+
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(10px);
+    box-shadow:0 2px 20px rgba(0,0,0,.05);
+}
+
+.nav-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:700;
+    color:#6b5644;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#555;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#b08d57;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    background:linear-gradient(
+        rgba(250,248,244,.95),
+        rgba(250,248,244,.95)
+    );
+}
+
+.hero-content{
+    max-width:750px;
+}
+
+.hero span{
+    color:#b08d57;
+    font-weight:600;
+}
+
+.hero h1{
+    font-size:60px;
+    margin:10px 0;
+    color:#4d4035;
+}
+
+.hero h3{
+    font-size:24px;
+    font-weight:500;
+    margin-bottom:20px;
+}
+
+.hero p{
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    background:#b08d57;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#967445;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:300px 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.profile-card{
+    background:white;
+    padding:30px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+.profile-card img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.logo-card{
+    display:flex;
+    align-items:flex-start;
+    gap:20px;
+}
+
+.logo-card img{
+    width:75px;
+    height:75px;
+    object-fit:contain;
+    border-radius:15px;
+    background:#faf8f4;
+    padding:6px;
+}
+
+.logo-content{
+    flex:1;
+}
+
+.logo-content h3{
+    color:#5c4a3d;
+    margin-bottom:5px;
+}
+
+.logo-content h4{
+    color:#b08d57;
+    margin-bottom:10px;
+    font-weight:500;
+}
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.skill-box{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+}
+
+.skill-box ul{
+    margin-left:20px;
+    margin-top:10px;
+}
+
+.skill-box li{
+    margin-bottom:8px;
+}
+
+.contact-box{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+}
+
+.contact-item{
+    margin:15px 0;
+}
+
+.contact-item a{
+    color:#b08d57;
+    text-decoration:none;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#f1ebe2;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:40px;
+}
+
+.about-grid{
+    grid-template-columns:1fr;
+}
+
+.nav-links{
+    display:none;
+}
+
+.logo-card{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<div class="nav-container">
+
+<div class="logo">Aisha Aura Hanin</div>
+
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#education">Education</a>
+<a href="#experience">Experience</a>
+<a href="#organization">Organization</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</div>
+
+</div>
+
+</nav>
+
+<section class="hero">
+
+<div class="container">
+
+<div class="hero-content">
+
+<span>Hello, I'm</span>
+
+<h1>Aisha Aura Hanin</h1>
+
+<h3>Administrative Staff | Data Entry | Operational Support</h3>
+
+<p>
+Fresh graduate from Brawijaya University with hands-on experience in
+administration, data entry, operational support, customer follow-up,
+reporting, and documentation. Detail-oriented, organized, and responsible
+with strong communication skills and proficiency in Microsoft Office.
+</p>
+
+<a href="#contact" class="btn">Contact Me</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<div class="container">
+
+<h2>About Me</h2>
+
+<div class="about-grid">
+
+<div class="profile-card">
+
+<img src="profile.jpg" alt="Profile">
+
+<h3>Aisha Aura Hanin</h3>
+
+<p>Administrative Support Specialist</p>
+
+</div>
+
+<div>
+
+<p>
+I am a fresh graduate from Brawijaya University with practical experience
+in administration, data entry, reporting, inventory management,
+documentation, and operational support. Through internships and
+organizational experiences, I have developed strong communication skills,
+attention to detail, and the ability to work efficiently in dynamic environments.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="education">
+
+<div class="container">
+
+<h2>Education</h2>
+
+<div class="card">
+
+<div class="logo-card">
+
+<img src="ub.jfif" alt="Universitas Brawijaya">
+
+<div class="logo-content">
+<h3>Universitas Brawijaya</h3>
+<h4>Bachelor of Agroecotechnology | GPA 3.55 / 4.00</h4>
+<p>September 2021 - April 2025</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="experience">
+
+<div class="container">
+
+<h2>Work Experience</h2>
+
+<div class="card">
+
+<div class="logo-card">
+
+<img src="bsi.png" alt="BSI">
+
+<div class="logo-content">
+
+<h3>PT Bank Syariah Indonesia</h3>
+<h4>Junior Sales Representative - Internship</h4>
+
+<p>
+Managed financing data entry for 80+ customers, conducted daily follow-ups,
+prepared customer documentation, and supported customer service activities.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="logo-card">
+
+<img src="paddy.png" alt="Paddy">
+
+<div class="logo-content">
+
+<h3>Paddy Store</h3>
+<h4>Shopkeeper - Internship</h4>
+
+<p>
+Recorded daily sales transactions, managed inventory checks for 1,000+
+products, and prepared daily reports using Microsoft Excel.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="logo-card">
+
+<img src="ptpn.jfif" alt="PTPN">
+
+<div class="logo-content">
+
+<h3>PT Perkebunan Nusantara I Regional 5</h3>
+<h4>Staff of Plantation Manager - Internship</h4>
+
+<p>
+Assisted in operational reporting, field data collection,
+documentation, and administrative support activities.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="organization">
+
+<div class="container">
+
+<h2>Organizational Experience</h2>
+
+<div class="card">
+
+<div class="logo-card">
+
+<img src="himata.jfif" alt="HIMAPTA">
+
+<div class="logo-content">
+
+<h3>HIMAPTA</h3>
+<h4>Staff Infokom</h4>
+
+<p>
+Managed digital documentation, publication records,
+social media archives, and content management activities.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="logo-card">
+
+<img src="inkai.jfif" alt="INKAI">
+
+<div class="logo-content">
+
+<h3>UKM INKAI UB</h3>
+<h4>Division Head</h4>
+
+<p>
+Coordinated organizational programs, member administration,
+communication, and event management.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="logo-content">
+
+<h3>PUALAM (Perhimpunan Siswa Pencinta Alam)</h3>
+<h4>Chairperson</h4>
+
+<p>
+Led organizational administration, coordinated activities,
+and managed external collaborations and training programs.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<div class="container">
+
+<h2>Skills</h2>
+
+<div class="skills">
+
+<div class="skill-box">
+
+<h3>Hard Skills</h3>
+
+<ul>
+<li>Microsoft Excel</li>
+<li>Microsoft Word</li>
+<li>Microsoft PowerPoint</li>
+<li>Google Workspace</li>
+<li>Data Entry</li>
+<li>Administrative Support</li>
+<li>Reporting</li>
+<li>Documentation</li>
+<li>Inventory Management</li>
+<li>Record Keeping</li>
+</ul>
+
+</div>
+
+<div class="skill-box">
+
+<h3>Soft Skills</h3>
+
+<ul>
+<li>Attention to Detail</li>
+<li>Communication</li>
+<li>Time Management</li>
+<li>Teamwork</li>
+<li>Problem Solving</li>
+<li>Adaptability</li>
+<li>Organization Skills</li>
+<li>Professionalism</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="container">
+
+<h2 style="text-align:center;">Contact</h2>
+
+<div class="contact-box">
+
+<div class="contact-item">
+📞 +62 812 8143 6255
+</div>
+
+<div class="contact-item">
+✉️ aishaaura9@gmail.com
+</div>
+
+<div class="contact-item">
+🔗 <a href="https://www.linkedin.com/in/aishaaurahanin1206/" target="_blank">
+LinkedIn Profile
+</a>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Aisha Aura Hanin Portfolio. All Rights Reserved.
+</footer>
+
+</body>
+</html>
